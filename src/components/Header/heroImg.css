@@ -1,0 +1,136 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.into-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-hero {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    text-align: center;
+}
+
+.title-hero, .title_hero, .subtitle_hero {
+    color: rgba(215, 224, 241, 1);
+}
+
+.links-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.title-hero a {
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+    font-size: 1rem;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    border-radius: 3px;
+    padding: 20px 30px;
+    border: 2px solid transparent;
+    color:rgba(215, 224, 241, 1);
+    margin: 2rem 10px 0;
+}
+
+.title-hero a {
+    text-decoration: none;
+    color:rgba(215, 224, 241, 1);
+    cursor: pointer;
+}
+
+.title-hero a:active {
+    transform: translateY(3px);
+}
+
+.title-hero a::after {
+    border-radius: 3px;
+}
+.title-hero a::before {
+    border-radius: 3px;
+}
+
+.shrink-border {
+    background-color: transparent;
+}
+
+.shrink-border:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: rgb(235, 104, 103);
+}
+
+.shrink-border:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    transition: opacity 0.3s, border 0.3s;
+}
+
+.shrink-border:hover::before {
+    opacity: 0;
+}
+
+.shrink-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 3px solid rgb(235, 104, 103);
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.shrink-border:hover::after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+@media screen and (max-width: 426px)  {
+    .title_hero {
+        font-size: 1.5rem;
+    }
+
+    .links-wrapper {
+        margin: 0;
+    }
+
+    .title-hero a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

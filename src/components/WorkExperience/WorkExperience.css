@@ -1,0 +1,136 @@
+.work-experience {
+    width: 100%;
+    padding: 3rem;
+    background-color: rgb(33, 41, 61);
+}
+
+.subtitle_experience, .subheader_experience {
+    text-align: center;
+    color: rgb(215 224 241);
+}
+
+.experience-wrapper {
+    margin-top: 3rem;
+}
+
+.experience-wrapper-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.experience-data {
+    width: 30%;
+    padding: 0 1rem;
+    color: rgb(235, 104, 103);
+    font-weight: bold;
+}
+
+.experience-data::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 268px;
+}
+
+
+.experience-content {
+    width: 70%;
+    color: rgb(215 224 241);
+}
+
+.experience-content::before {
+    content: '';
+    width: 2px;
+    height: 115%;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 275px;
+}
+
+.experience-content span {
+    font-family: cursive;
+}
+
+.experience-content h3{
+    color: rgb(235, 104, 103);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1025px) {
+    .work-experience {
+        padding: 2rem 0;
+    }
+    .experience-wrapper-item {
+        flex-direction: column;
+        margin-left: 10rem;
+    }
+    .experience-content::before {
+        left: -30px;
+    }
+
+    .experience-data::after {
+        left: -35px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .experience-content::before {
+        height: 110%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .experience-wrapper-item {
+        margin-left: 5rem;
+        margin-bottom: 10px;
+    }
+
+    .experience-data {
+        width: 80%;
+    }
+
+    .experience-content p {
+        font-size: 1rem;
+    }
+
+    .experience-content::before {
+        height: 105%;
+    }
+
+    .experience-data::after {
+        width: 10px;
+        height: 10px;
+        left: -34px;
+    }
+
+    .title_about {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .experience-content::before {
+        height: 103%;
+    }
+
+    .experience-wrapper-item {
+        margin-left: 4rem;
+    }
+
+    .experience-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .experience-wrapper-item {
+        margin-left: 3rem;
+    }
+}

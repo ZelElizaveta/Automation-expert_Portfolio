@@ -1,0 +1,56 @@
+.hero-education {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+}
+
+.into-image_education {
+    height: 400px;
+}
+
+.mask_education::after {
+    margin-top: 2.7rem;
+    height: 80%;
+    backdrop-filter: blur(40px);
+    opacity: 0.6;
+}
+
+.hero-education-wrapper {
+    position: relative;
+}
+
+.education-text {
+    position: absolute;
+    top: -320px;
+    color: rgb(215 224 241);
+    font-weight: bold;
+    text-align: center;
+}
+
+.education-text p {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 769px) {
+    .education-text p {
+        font-size: 1.5rem;
+    }
+} 
+
+@media screen and (max-width: 426px) {
+    .education-text p {
+        font-size: 1.4rem;
+    }
+    .education-text {
+        top: -356px;
+    }
+} 
+
+@media screen and (max-width: 321px) {
+    .education-text p {
+        font-size: 1.2rem;
+    }
+}
+
+
+

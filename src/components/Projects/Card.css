@@ -1,0 +1,51 @@
+.card {
+    min-width: 300px;
+    min-height: 350px;
+    border: 2px solid black;
+    background-color: rgb(33, 41, 61);
+    padding: 1rem 2rem;
+    color:aliceblue;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card:hover {
+    scale: 1.05;
+    transition: all 0.5s;
+}
+
+.subheader_card {
+    color: rgb(235, 104, 103);
+    text-align: center;
+}
+
+.card-text {
+    white-space: pre-line;
+}
+
+.skills-btn_card {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+}
+
+.skills-btn_card {
+    text-decoration: none;
+    color: rgb(33, 41, 61);
+}
+
+.skills-btn_card:hover {
+    background-color: #fff;
+    color: rgb(33, 41, 61);
+}
+
+@media screen and (max-width: 321px) {
+    .skills-btn_card {
+        width: 145px;
+    }
+}

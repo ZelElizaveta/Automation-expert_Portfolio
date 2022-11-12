@@ -1,0 +1,40 @@
+.skills {
+    padding: 2rem 0;
+}
+
+.skills-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-btn {
+    width: 105px;
+    padding: 1rem;
+    box-sizing: content-box;
+    background-color: rgb(235, 104, 103);
+    color: rgb(33, 41, 61);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.skills-btn:hover {
+    background-color: rgb(33, 41, 61);
+    color: rgb(235, 104, 103);
+}
+
+@media screen and (max-width: 1024px) {
+    .skills {
+        padding: 0;
+    }
+    .skills-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-btn {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}

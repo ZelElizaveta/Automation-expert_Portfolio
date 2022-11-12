@@ -1,0 +1,30 @@
+.slider {
+    display: block;
+    background-color: rgb(215 224 241);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.slider-item  {
+    width: 100%;
+}
+
+.slider-item img {
+    display: block;
+    max-height: 700px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+.project {
+    padding: 3rem 0;
+}
+
+.project-descr p {
+    white-space: pre-line;
+    line-height: 2rem;
+    text-align: center;
+}
+
